@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="3.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coração pulsando</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+   <br> <br> <br>
+    <audio id="audioPlayer" controls>
+      <source src="Cuff It - Beyoncé.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <br> <br> <br>
+  
+  <div class="heart"></div>
+  <h1 style="color:white"><a href="index.html">Voltar para o quiz</h1></a>
+  </head>
+  <body>
+    
+     
+      <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        
+        function reproduzir() {
+          audioPlayer.play();
+        }
+        
+        function pausar() {
+          audioPlayer.pause();
+        }
+        
+        function parar() {
+          audioPlayer.pause();
+          audioPlayer.currentTime = 0;
+        }
+      </script>
+     
+    
+  </body>
+ 
+    
+  
+</html>
